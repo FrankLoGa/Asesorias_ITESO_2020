@@ -20,19 +20,16 @@ let horariosF = [];
         }
        
 
-        horarioTB.innerHTML = horariosF.map(element=>`<tr>
-                                                     <td>${element.Nombre}</td>
-                                                     <td>${element.Dias}</td>
-                                                     <td>${element.Hora}</td>
-                                                     <td>${element.Salon}</td>
-                                                    </tr>`
-         ).join("");
-    });
+
         
-    console.log(localStorage.materia);
-        materiaTitle.innerHTML =`<h1 id="materiaTitle">${localStorage.materia}</h1>`;
+  
    
+    });
 }
+
+console.log(localStorage.materia);
+materiaTitle.innerHTML =`<h1 id="materiaTitle">${localStorage.materia}</h1>`;
+
  function error(){
      console.log("Oops!! something went wrong");
  }

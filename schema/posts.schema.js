@@ -21,7 +21,7 @@ class foroPost extends dbUsers{
                 type: String,
                 require: true
             },
-            Materia:{
+            materia:{
                 type: Number,
                 required: true
             }
@@ -68,14 +68,14 @@ class foroPost extends dbUsers{
 let npost = new foroPost();
 
 let body = {
-        uid: 1, 
+        uid: 2, 
         autor: "Pedro", 
         title: "Duda", 
         message : "Tengo dudas", 
         materia:1 
 }
 
-npost.createPost(body);
+/*npost.createPost(body);*/
 
 
 module.exports = npost;

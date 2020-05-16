@@ -2,16 +2,27 @@ let urlPost = "/Foro";
 let token = localStorage.token;
 let urlUser = (window.localStorage.usuario == 'Profesor') ? '/Profesores' : '/Alumnos'
 let urlMateria = '/Materias'
-let uID = 1;
+
 
 let postToSend ={
-    uid: uID,
+    uid: 1,
     autor:"",
     title:"",
     message:"", 
     materia:1
 }
+fetch(urlPost,{
+    method: 'GET',
+    headers: {
+        "Content-Type" : "application/json",
+        'x-auth': token
+    }
+}).then(response => response.json() )
+.then(function(jsonPost){
+   postToSend.uid = jsonPost.length;
+   console.log(jsonPost);
 
+});
 
 
 process()
@@ -54,9 +65,7 @@ function process(){
     postToSend.Message = messageBox.value
     guardarEnJSON(postToSend ,urlPost, Ssucces, Serror);
     console.log(postToSend);
-    uID ++;
-
-
+    window.href = '../Materia.html'
 }
  
 
