@@ -1,0 +1,437 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <title>Suppablog - Minimal Blog Html Template</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="Template by Colorlib" />
+        <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
+        <meta name="author" content="Colorlib" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <link rel="shortcut icon" href="images/favicon.png" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CLibre+Baskerville:400,400italic,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css"  href='css/clear.css' />
+        <link rel="stylesheet" type="text/css"  href='css/common.css' />
+        <link rel="stylesheet" type="text/css"  href='css/font-awesome.min.css' />
+        <link rel="stylesheet" type="text/css"  href='css/carouFredSel.css' />
+        <link rel="stylesheet" type="text/css"  href='css/sm-clean.css' />
+        <link rel="stylesheet" type="text/css"  href='style.css' />
+
+        <!--[if lt IE 9]>
+                <script src="js/html5.js"></script>
+        <![endif]-->
+            <style>
+                body{
+                    background-color: #428bca;   
+                }
+
+                div#toggle{
+                    height: 100px;
+                }
+                div.search-holder{
+                   background-color: lightblue;
+                }
+                .emp-profile{
+                padding: 3%;
+                margin-top: 3%;
+                margin-bottom: 3%;
+                border-radius: 0.5rem;
+                background: #fff;
+                }
+                .profile-img{
+                text-align: center;
+                }
+                .profile-img img{
+                width: 70%;
+                height: 100%;
+                }
+                .profile-img .file {
+                position: relative;
+                overflow: hidden;
+                margin-top: -20%;
+                width: 70%;
+                border: none;
+                border-radius: 0;
+                font-size: 15px;
+                background: #212529b8;
+                }
+                .profile-img .file input {
+                position: absolute;
+                opacity: 0;
+                right: 0;
+                top: 0;
+                }
+                .profile-head h5{
+                color: #333;
+                }
+                .profile-head h6{
+                color: #0062cc;
+                }
+                .profile-edit-btn{
+                border: none;
+                border-radius: 1.5rem;
+                width: 70%;
+                padding: 2%;
+                font-weight: 600;
+                color: #6c757d;
+                cursor: pointer;
+                }
+                .proile-rating{
+                font-size: 12px;
+                color: #818182;
+                margin-top: 5%;
+                }
+                .proile-rating span{
+                color: #495057;
+                font-size: 15px;
+                font-weight: 600;
+                }
+                .profile-head .nav-tabs{
+                margin-bottom:5%;
+                }
+                .profile-head .nav-tabs .nav-link{
+                font-weight:600;
+                border: none;
+                }
+                .profile-head .nav-tabs .nav-link.active{
+                border: none;
+                border-bottom:2px solid #0062cc;
+                }
+                .profile-work{
+                padding: 14%;
+                margin-top: -15%;
+                }
+                .profile-work p{
+                font-size: 12px;
+                color: #818182;
+                font-weight: 600;
+                margin-top: 10%;
+                }
+                .profile-work a{
+                text-decoration: none;
+                color: #495057;
+                font-weight: 600;
+                font-size: 14px;
+                }
+                .profile-work ul{
+                list-style: none;
+                }
+                .profile-tab label{
+                font-weight: 600;
+                }
+                .profile-tab p{
+                font-weight: 600;
+                color: #0062cc;
+                }
+
+                #exTab1 .tab-content {
+                color : white;
+                background-color: #428bca;
+                padding : 5px 15px;
+                }
+
+                #exTab2 h3 {
+                color : white;
+                background-color: #428bca;
+                padding : 5px 15px;
+                }
+
+                /* remove border radius for the tab */
+
+                #exTab1 .nav-pills > li > a {
+                border-radius: 0;
+                }
+
+                /* change border radius for the tab , apply corners on top*/
+
+                #exTab3 .nav-pills > li > a {
+                border-radius: 4px 4px 0 0 ;
+                }
+
+#exTab3 .tab-content {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+
+.widget-area {
+background-color: #fff;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+-ms-border-radius: 4px;
+-o-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+-moz-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+-ms-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+-o-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+float: left;
+margin-top: 30px;
+padding: 25px 30px;
+position: relative;
+width: 100%;
+}
+.status-upload {
+background: none repeat scroll 0 0 #f5f5f5;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+-ms-border-radius: 4px;
+-o-border-radius: 4px;
+border-radius: 4px;
+float: left;
+width: 100%;
+}
+.status-upload form {
+float: left;
+width: 100%;
+}
+.status-upload form textarea {
+background: none repeat scroll 0 0 #fff;
+border: medium none;
+-webkit-border-radius: 4px 4px 0 0;
+-moz-border-radius: 4px 4px 0 0;
+-ms-border-radius: 4px 4px 0 0;
+-o-border-radius: 4px 4px 0 0;
+border-radius: 4px 4px 0 0;
+color: #777777;
+float: left;
+font-family: Lato;
+font-size: 14px;
+height: 142px;
+letter-spacing: 0.3px;
+padding: 20px;
+width: 100%;
+resize:vertical;
+outline:none;
+border: 1px solid #F2F2F2;
+}
+
+.status-upload ul {
+float: left;
+list-style: none outside none;
+margin: 0;
+padding: 0 0 0 15px;
+width: auto;
+}
+.status-upload ul > li {
+float: left;
+}
+.status-upload ul > li > a {
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+-ms-border-radius: 4px;
+-o-border-radius: 4px;
+border-radius: 4px;
+color: #777777;
+float: left;
+font-size: 14px;
+height: 30px;
+line-height: 30px;
+margin: 10px 0 10px 10px;
+text-align: center;
+-webkit-transition: all 0.4s ease 0s;
+-moz-transition: all 0.4s ease 0s;
+-ms-transition: all 0.4s ease 0s;
+-o-transition: all 0.4s ease 0s;
+transition: all 0.4s ease 0s;
+width: 30px;
+cursor: pointer;
+}
+.status-upload ul > li > a:hover {
+background: none repeat scroll 0 0 #606060;
+color: #fff;
+}
+.status-upload form button {
+border: medium none;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+-ms-border-radius: 4px;
+-o-border-radius: 4px;
+border-radius: 4px;
+color: #fff;
+float: right;
+font-family: Lato;
+font-size: 14px;
+letter-spacing: 0.3px;
+margin-right: 9px;
+margin-top: 9px;
+padding: 6px 15px;
+}
+.dropdown > a > span.green:before {
+border-left-color: #2dcb73;
+}
+.status-upload form button > i {
+margin-right: 7px;
+}
+
+
+    </style>
+    </head>
+
+
+    <body class="home blog">
+
+        <!-- Preloader Gif -->
+        <table class="doc-loader">
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="images/ajax-document-loader.gif" alt="Loading...">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Left Sidebar -->
+        <div id="sidebar" class="sidebar">
+            <div class="menu-left-part">
+                <div class="search-holder">
+                    <label>
+                        <input type="search" class="search-field" placeholder="Búsqueda..." value="" name="s" title="Search for:">
+                    </label>
+                </div>
+                <div class="site-info-holder">
+                    <h1 class="site-title">Asesorías ITESO</h1>
+                    <p class="site-description">
+                        Asesorías ITESO es una plataforma que asiste al estudiante a agendar asesorías con sus profesores de cualquier materia. Este servicio es proporcionado por el ITESO.
+                    </p>
+                </div>
+                <nav id="header-main-menu">
+                    <ul class="main-menu sm sm-clean">
+                        <li><a id="inicioRight" href="LoggedProfessor.html" class="current">Inicio</a></li>
+                        <li><a href="https://iteso.instructure.com">Canvas</a></li>
+                        <li><a href="http://cursos.iteso.mx/">Moodle</a></li>
+                        <li><a href="https://www.iteso.mx">ITESO</a></li>
+                    </ul>
+                </nav>
+                <footer>
+                    <div class="footer-info">
+                        © 2018 SUPPABLOG HTML TEMPLATE. <br> CRAFTED WITH <i class="fa fa-heart"></i> BY <a href="https://colorlib.com">COLORLIB</a>.
+                    </div>
+                </footer>
+            </div>
+            <div class="menu-right-part">
+                <div class="logo-holder">
+                    <a href="https://www.iteso.mx">
+                        <img src="images/Logo-ITESO-MinimoV.png" alt="Suppablog WP">
+                    </a>
+                </div>
+                <div class="toggle-holder">
+                    <div id="toggle">
+                        <div class="menu-line"></div>
+                    </div>
+                </div>
+                <div class="social-holder">
+                    <div class="social-list">
+                        <a id="inidioID" href="LoggedProfessor.html"><i class="fa fa-home">Inicio</i></a>
+                        <a href="Vista_Usuario.html"><i class="fa fa-user"> Mi Perfil</i></a>
+                        <!-- <a href="editUser.html"><i class="fa fa-edit"> Editar Usuario</i></a> -->
+                        <a id="cerrarSesion" href="index.html"><i class="fa fa-sign-out"> Cerrar Sesión</i></a>
+                        <!-- <a href="https://twitter.com/iteso"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/user/ITESOuniversidad"><i class="fa fa-youtube-play"></i></a>
+                        <a href="https://www.instagram.com/ITESOuniversidad/"><i class="fa fa-instagram"></i></a> -->
+                    </div>
+                </div>
+                <div class="fixed scroll-top"><i class="fa fa-caret-square-o-up" aria-hidden="true"></i></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+ 
+        <!-- Home Content -->
+        <div id="content" class="site-content">
+            <div id="blog-wrapper">
+                <div class="container emp-profile">
+                    <!-- <form method="post"> -->
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="profile-img">
+                                    <img src="./images/men.jpg" alt=""/>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="profile-head">
+                                            <h5 id="h5">
+                                                Juan Perez
+                                            </h5>
+                                            <h6 id="h6">
+                                                Ingeniero Civil
+                                            </h6>
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li id="informacionID" class="nav-item">
+                                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Infomacion</a>
+                                        </li>
+                                        <li id="mensajeID" class="nav-item">
+                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Mensaje</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="bajasID"class="col-md-2">
+                                <button id="daBajaID" class="btn btn-danger btn-lg">Dar de Baja</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="profile-work">
+                                    <!-- <p>Asesorías</p>
+                                    <a href="">Calculo diferencial</a><br/>
+                                    <a href="">Calculo estructural</a><br/>
+                                    <a href="">Logica matematica</a><br/> -->
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="tab-content profile-tab" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <h3>Enviar mensaje</h3>
+                                                </div>            
+                                                <div class="row">        
+                                                    <div class="col-md-6">
+                                                      <div class="widget-area no-padding blank">
+                                                        <div class="status-upload">
+                                                            <form>
+                                                              <textarea placeholder="Texto" ></textarea>
+                                                              <ul>
+                                                                 <li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Picture"><i class="fa fa-picture-o"></i></a></li>
+                                                              </ul>
+                                                              <button type="submit" class="btn btn-success green"><i class="fa fa-share"></i> Enviar</button>
+                                                            </form>
+                                                        </div> <!--Status Upload  -->
+                                                      </div> <!-- Widget Area --> 
+                                                    </div>                        
+                                                </div>
+                                            </div>
+                                         </div>
+                                    </div>
+                    <!-- </form>            -->
+                </div>
+            </div>
+        </div> 
+           
+
+        <!-- Button trigger modal -->
+        <!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
+          Launch
+        </button> -->
+        
+ 
+        <!--Load JavaScript-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type='text/javascript' src='js/imagesloaded.pkgd.js'></script>
+        <script type='text/javascript' src='js/jquery.nicescroll.min.js'></script>
+        <script type='text/javascript' src='js/jquery.smartmenus.min.js'></script>
+        <script type='text/javascript' src='js/jquery.carouFredSel-6.0.0-packed.js'></script>
+        <script type='text/javascript' src='js/jquery.mousewheel.min.js'></script>
+        <script type='text/javascript' src='js/jquery.touchSwipe.min.js'></script>
+        <script type='text/javascript' src='js/jquery.easing.1.3.js'></script>
+        <script type='text/javascript' src='js/main.js'></script>
+        <script type='text/javascript' src='Vista_Profe.js'></script>
+        
+    </body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <title>Materias</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="Template by Colorlib" />
+        <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
+        <meta name="author" content="Colorlib" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <link rel="shortcut icon" href="images/favicon.png" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CLibre+Baskerville:400,400italic,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css"  href='css/clear.css' />
+        <link rel="stylesheet" type="text/css"  href='css/common.css' />
+        <link rel="stylesheet" type="text/css"  href='css/font-awesome.min.css' />
+        <link rel="stylesheet" type="text/css"  href='css/carouFredSel.css' />
+        <link rel="stylesheet" type="text/css"  href='css/sm-clean.css' />
+        <link rel="stylesheet" type="text/css"  href='style.css' />
+
+        <!--[if lt IE 9]>
+                <script src="js/html5.js"></script>
+        <![endif]-->
+<style>
+  body {
+    /* padding : 10px ; */
+    background-color: aliceblue;
+    }
+
+div#toggle{
+    height: 100px;
+}
+
+div.search-holder{
+    background-color: lightblue;
+}
+
+#exTab1 .tab-content {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+
+#exTab2 h3 {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+
+/* remove border radius for the tab */
+
+#exTab1 .nav-pills > li > a {
+  border-radius: 0;
+}
+
+/* change border radius for the tab , apply corners on top*/
+
+#exTab3 .nav-pills > li > a {
+  border-radius: 4px 4px 0 0 ;
+}
+
+#exTab3 .tab-content {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+
+div#sidebar{
+    min-height: 1548px;
+}
+
+
+            </style>
+    </head>
+
+
+    <body class="home blog">
+
+        <!-- Preloader Gif -->
+        <table class="doc-loader">
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="images/ajax-document-loader.gif" alt="Loading...">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Left Sidebar -->
+        <div id="sidebar" class="sidebar">
+            <div class="menu-left-part" style="height: 1058px;">
+                <div class="search-holder">
+                    <label>
+                        <input type="search" class="search-field" placeholder="Búsqueda..." value="" name="s" title="Search for:">
+                    </label>
+                </div>
+                <div class="site-info-holder">
+                    <h1 class="site-title">Asesorías ITESO</h1>
+                    <p class="site-description">
+                        Asesorías ITESO es una plataforma que asiste al estudiante a agendar asesorías con sus profesores de cualquier materia. Este servicio es proporcionado por el ITESO.
+                    </p>
+                </div>
+                <nav id="header-main-menu">
+                    <ul class="main-menu sm sm-clean">
+                        <li><a href="LoggedUser.html" class="current">Inicio</a></li>
+                        <li><a href="https://iteso.instructure.com">Canvas</a></li>
+                        <li><a href="http://cursos.iteso.mx/">Moodle</a></li>
+                        <li><a href="https://www.iteso.mx">ITESO</a></li>
+                    </ul>
+                </nav>
+                <footer>
+                    <div class="footer-info">
+                        © 2018 SUPPABLOG HTML TEMPLATE. <br> CRAFTED WITH <i class="fa fa-heart"></i> BY <a href="https://colorlib.com">COLORLIB</a>.
+                    </div>
+                </footer>
+            </div>
+            <div class="menu-right-part" style="height: 1058px;">
+                <div class="logo-holder">
+                    <a href="https://www.iteso.mx">
+                        <img src="images/Logo-ITESO-MinimoV.png" alt="Suppablog WP">
+                    </a>
+                </div>
+                <div class="toggle-holder" style="height: 100px">
+                    <div id="toggle">
+                        <div class="menu-line"></div>
+                    </div>
+                </div>
+                <div class="social-holder">
+                    <div class="social-list">
+                        <a href="LoggedUser.html"><i class="fa fa-home"> Inicio</i></a>
+                        <a href="Vista_Usuario.html"><i class="fa fa-user"> Mi Perfil</i></a>
+                        <!-- <a href="editUser.html"><i class="fa fa-edit"> Editar Usuario</i></a> -->
+                        <a href="index.html"><i class="fa fa-sign-out"> Cerrar Sesión</i></a>
+                        <!-- <a href="https://twitter.com/iteso"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/user/ITESOuniversidad"><i class="fa fa-youtube-play"></i></a>
+                        <a href="https://www.instagram.com/ITESOuniversidad/"><i class="fa fa-instagram"></i></a> -->
+                    </div>
+                </div>
+                <div class="fixed scroll-top"><i class="fa fa-caret-square-o-up" aria-hidden="true"></i></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+   
+
+        <!-- Home Content -->
+        <div id="content" class="site-content">
+            <div id="blog-wrapper">
+                <div class="blog-holder center-relative">
+                    <h1 id="materiaTitle">Calculo diferencial</h1>
+
+                    <ul class="nav nav-pills">
+                        <li class="active"><a data-toggle="pill" href="#home">Material</a></li>
+                        <li><a data-toggle="pill" href="#menu1">Horario</a></li>
+                        <li><a data-toggle="pill" href="#menu2">Foros</a></li>
+                        <li><a data-toggle="pill" href="#menu3">Profesores</a></li>
+                      </ul>
+                      
+                      <div class="tab-content">
+                        <div id="home" class="tab-pane fade in active">
+                          <a href="#"><h3>Material del curso</h3></a>
+                          <ul>
+                              <a href="#"><li><h5>File 1</h5></li></a>
+                              <a href="#"><li><h5>File 2</h5></li></a>
+                              <a href="#"><li><h5>File 3</h5></li></a>
+                              <a href="#"><li><h5>File 4</h5></li></a>
+                              <a href="#"><li><h5>File 5</h5></li></a>
+                              <a href="#"><li><h5>File 6</h5></li></a>
+                              <a href="#"><li><h5>File 7</h5></li></a>
+                              <a href="#"><li><h5>File 8</h5></li></a>
+                          </ul>
+                        </div>
+                        <div id="horariosTB" class="tab-pane fade">
+                          <!---Vista horario-->  <a href="Vista_Horarios.html"><h3>Horarios</h3></a>
+                          <table class="table table-sm table-dark">
+                            <thead>
+                              <tr>
+                                <th scope="col">Profesor</th>
+                                <th scope="col">Dias</th>
+                                <th scope="col">Hora</th>
+                                <th scope="col">Salon</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <td>Juan Perez</td>
+                                <td>lun - mie</td>
+                                <td>12:00-2:00 PM</td>
+                                <td>C-203</td>
+                              </tr>
+                              <tr>
+                                <td>Jane Doe</td>
+                                <td>Viernes</td>
+                                <td>2:00-4:00 PM</td>
+                                <td>C-210</td>
+                              </tr>
+                              <tr>
+                                <td>Jhon Doe</td>
+                                <td>Jueves</td>
+                                <td>10:00-12:00 PM</td>
+                                <td>B-110</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div id="menu2" class="tab-pane fade">
+                         <!--Vista Foros-->   <a href="Vista_Foro.html"><h3>Foros</h3></a>
+                            <div class="container-fluid mt-100">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="card mb-4">
+                                            <div class="card-header">
+                                                <div class="media flex-wrap w-100 align-items-center"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583246/AAA/2.jpg" class="d-block ui-w-40 rounded-circle" alt="">
+                                                    <div class="media-body ml-3"> <a href="javascript:void(0)" data-abc="true">Tom Harry</a>
+                                                        <div class="text-muted small">13 days ago</div>
+                                                    </div>
+                                                    <div class="text-muted small ml-3">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <p>Tengo dudas con la ecuacion y=(x^2 + y^5)/cos(2x) <br> Ayuda</p>
+                                            </div>
+                                            <div class="card-footer d-flex flex-wrap justify-content-between align-items-center px-0 pt-0 pb-3">
+
+                                                <div class="px-4 pt-3"> <button type="button" class="btn btn-primary"><i class="ion ion-md-create"></i>&nbsp; Reply</button> </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="menu3" class="tab-pane fade">
+                          <h3>Profesores</h3>
+                          <ul>
+                              <li><a href="Vista_Profe.html">Juan Perez</a></li>
+                              <li><a href="Vista_Profe.html">Jane Doe</a></li>
+                              <li><a href="Vista_Profe.html">Jhon Doe</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                </div>
+            </div> 
+            <div class="featured-image-holder">
+                <div class="featured-post-image" style="background-image: url(images/campusIteso02.jpeg)"></div>
+                <!-- <div class="featured-post-image" style="background-image: url(images/campusIteso01.jfif)"></div> -->
+                <!-- <img src="images/campusIteso02.jpeg" alt="Loading..."> -->
+            </div>
+
+        </div>
+
+        <!--Load JavaScript-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/almacenamiento.js"></script>
+        <script type="text/javascript" src="js/Fetch_Posts.js"></script>
+        <script type="text/javascript" src="js/Materia.js"></script>  
+        <script type='text/javascript' src='js/imagesloaded.pkgd.js'></script>
+        <script type='text/javascript' src='js/jquery.nicescroll.min.js'></script>
+        <script type='text/javascript' src='js/jquery.smartmenus.min.js'></script>
+        <script type='text/javascript' src='js/jquery.carouFredSel-6.0.0-packed.js'></script>
+        <script type='text/javascript' src='js/jquery.mousewheel.min.js'></script>
+        <script type='text/javascript' src='js/jquery.touchSwipe.min.js'></script>
+        <script type='text/javascript' src='js/jquery.easing.1.3.js'></script>
+        <script type='text/javascript' src='js/main.js'></script>
+        
+    </body>
+</html>

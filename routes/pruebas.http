@@ -1,0 +1,38 @@
+@host = http://localhost:3000
+
+###
+GET {{host}}/Profesores
+###
+GET {{host}}/Profesores/profeTest@db.com
+x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb3JyZW8iOiJwcm9mZVRlc3RAZGIuY29tIiwiaWF0IjoxNTg5NDk3MzQwLCJleHAiOjE1ODk1MDA5NDB9.y-D-7Xeqw1nHstEJV8ffAFEhyb1WhJdWp0ORWR7bgBw
+###
+POST {{host}}/login
+
+{
+    "correo": "Test@DB",
+    "password": "12345"
+}
+
+###
+GET {{host}}/Foro
+
+###
+POST  {{host}}/Foro
+
+{
+"uid":"1",
+"autor":"Pedro Perez",
+"title":"Duda",
+"message":"Como hago esta operacion",
+"materia":1}
+
+###
+POST  {{host}}/Horario
+
+{
+"uid":"1",
+"autor":"Pedro Perez",
+"title":"Duda",
+"message":"Como hago esta operacion",
+"materia":1}
+
